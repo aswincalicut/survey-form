@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+
+    <style>
+         .v1{
+            border-left: 30px solid hwb(160 37% 22%);
+            border-right: 30px solid hwb(160 37% 22%);
+            height: 500px;
+         }
+
+
+        h1{
+            background-color: hwb(160 37% 22%);
+        }
+
+        .last{
+            padding-right: 4cm;
+        }
+
+        .check{
+            padding-left: 4.3cm;
+            padding-right: 13cm;
+            padding-left: 15cm;
+        }
+
+        .future {
+            padding-right: 11.4cm;
+        }
+
+        .ffc {
+          padding-right: 5.7cm;
+        }
+
+
+        .definitely {
+            padding-left: 8cm;
+                
+        }
+
+        .code {
+            padding-right: 1.7cm;
+        }
+
+        .recommend {
+            padding-right: 9cm;
+        }
+
+        .age{
+            padding-left: .3cm;
+        }
+
+        .role {
+            padding-right: 8cm;
+            padding-left: .2cm;
+        }
+
+        form{
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="v1">
+    <h1><center> Survey Form </center></h1>
+    <label><center> Let us know how we can improve freecodecamp </center></label><br>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="enter your name"><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="enter your email"><br><br>
+      <div class="age">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+      </div>
+     <div class="role">
+        <label for="role">Which option describe your current role?</label>
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select><br><br>
+     </div>
+      
+     <div class="recommend">
+    <div class="code">
+        <label>How likely is that you would recommend<br> Free Code Camp to a friend?</label></div>
+    <div class="definitely">
+        <input type="radio" id="definitely" name="recommend" value="definitely">
+        <label for="definitely">Definitely</label><br>
+    
+        <input type="radio" id="maybe" name="recommend" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="not sure" name="recommend" value="not sure">
+        <label for="unlikely">Not sure</label> </div> <br>
+    </div>
+      <div class="ffc">
+        <label for="likes">What do you like most in FFC:</label>
+        <select id="ffc" name="ffc">
+            <option value="select">Select an option</option>
+            <option></option>
+            <option></option>
+        </select><br><br></div>
+        
+      
+        <label for="improvements"> <div class="future"> Things that should be improved in the future </div> <div class="check"><div class="last"> check all that apply </label>
+     
+        <input type="radio" id="front-end" name="project" value="front-end-projects">
+        <label for="front-end">Front-end-projects</label><br></div>
+
+        <input type="radio" id="back-end" name="project" value="back-end-projects">
+        <label for="front-end">Back-end-projects</label><br>
+
+        <input type="radio" id="data" name="project" value="data visualization">
+        <label for="front-end">Data Visualization</label></div></div>
+      </form>
+    </div>
+    
+</body>
+</html>
